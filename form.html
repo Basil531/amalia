@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body bgcolor="90ee90">
+
+        <header>
+            
+            <div style="margin-right: auto; margin-left: 10%; color:white;">
+                <strong style="font-size: 20px;">
+                    Naail Hussain (n25hussa)
+                </strong>
+            </div>
+
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="root.html">About Me</a></li>
+                    <li><a href="design.html">About Site Design</a></li>
+                    <li><a href="username.html">Extra</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="mailto:naail.hussain@uwaterloo.ca"><button>
+                Contact Me
+            </button></a>
+        </header>
+
+        <h2 align="center">Form</h2>
+        
+        <form action="https://student.cs.uwaterloo.ca/~cs200/cgi-bin/Responder.cgi"
+            method="post"
+            style="margin-top: 20px;"
+
+            <input type="hidden" name="identity" value="Naail Hussain">
+            
+            <table style="height: 300px; width: 500px;" border="0" align="center">
+
+                <tr>
+                    <td><label for="id"><strong>Registration Number</strong></label></td>
+                    <td><input type="text" name="idNumber" id="id" size="33" placeholder="12345678"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="comments"><strong>Comments</strong></label></td>
+                    <td><textarea name="comments" id="comments" cols="29"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <!--  <strong>Lab time:</strong>  -->
+                        <label for="830TT">830TT</label>
+                        <input type="radio" name="lab" value="Lab101" id="830TT">
+                        <label for="1030TT">1030TT</label>
+                        <input type="radio" name="lab" value="Lab102" id="1030TT">
+                        <label for="1430WF">1430WF</label>
+                        <input type="radio" name="lab" value="Lab103" id="1430WF"> 
+                    </td>     
+                </tr>     
+
+                <tr>
+                    <td><label for="app"><strong>Application</strong></label></td>
+                    <td align="center">
+                        <select name="app" id="app" cols="33">
+                            <option value="Word">Word</option>
+                            <option value="Excel">Excel</option>
+                            <option value="HTML">HTML</option>
+                            <option value="Pixel Graphics">Pixel Graphics</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="FileMaker">FileMaker</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <label for="mac">Macintosh</label>
+                        <input type="checkbox" name="mac" value="Yes" id="mac">
+                        <label for="win">Windows</label>
+                        <input type="checkbox" name="win" value="Yes" id="win">
+                        <label for="unix">Linux</label>
+                        <input type="checkbox" name="unix" value="Yes" id="unix">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="reset">
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+
+    </body>
+</html>
