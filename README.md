@@ -5,7 +5,11 @@ The Amalian is home to everything you could learn about the country of Amalia.
 
 A pandemic idea that hopefully blossoms into a fun worldbuilding project.
 
-### *0.1.0 (2025/07/15)*
+### *0.1.0 (2025/07/16)*
+------------------------
+-theme overhaul to using nautical inspired colours
+
+### *0.0.3 (2025/07/15)*
 ------------------------
 - Removed personal information off of assignment content
 - Replaced assignment nav links to planned links for the project
