@@ -29,76 +29,21 @@
             </button></a>
         </header>
 
-        <h2 align="center">Date/Time</h2>
-
-        <p>The current time in Amalia is: <iframe src="https://free.timeanddate.com/clock/i9zdt40s/n16/tlca/fn6/fs20/tct/pct/ftb/th1" frameborder="0" width="80" height="27" allowtransparency="true"></iframe>
-
+	<h2 id="time" align="center" style="font-size:200px; margin: 0px"></h2>
+	
         <p>Welcome to the future date and time page. This page will eventually display
         the current data and time in Amalia using the local calendar. This page is curently a WIP.
-        In the meantime, please enjoy the former Form page from an old CS assignment.</p>
-        
-        <form action="https://student.cs.uwaterloo.ca/~cs200/cgi-bin/Responder.cgi"
-            method="post"
-            style="margin-top: 20px;"
+        	
+	<script>
+		function timer() {
+      		let d = new Date;
 
-            <input type="hidden" name="identity" value="Naail Hussain">
-            
-            <table style="height: 300px; width: 500px;" border="0" align="center">
-
-                <tr>
-                    <td><label for="id"><strong>Registration Number</strong></label></td>
-                    <td><input type="text" name="idNumber" id="id" size="33" placeholder="12345678"></td>
-                </tr>
-
-                <tr>
-                    <td><label for="comments"><strong>Comments</strong></label></td>
-                    <td><textarea name="comments" id="comments" cols="29"></textarea></td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" align="center">
-                        <!--  <strong>Lab time:</strong>  -->
-                        <label for="830TT">830TT</label>
-                        <input type="radio" name="lab" value="Lab101" id="830TT">
-                        <label for="1030TT">1030TT</label>
-                        <input type="radio" name="lab" value="Lab102" id="1030TT">
-                        <label for="1430WF">1430WF</label>
-                        <input type="radio" name="lab" value="Lab103" id="1430WF"> 
-                    </td>     
-                </tr>     
-
-                <tr>
-                    <td><label for="app"><strong>Application</strong></label></td>
-                    <td align="center">
-                        <select name="app" id="app" cols="33">
-                            <option value="Word">Word</option>
-                            <option value="Excel">Excel</option>
-                            <option value="HTML">HTML</option>
-                            <option value="Pixel Graphics">Pixel Graphics</option>
-                            <option value="Social Media">Social Media</option>
-                            <option value="FileMaker">FileMaker</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" align="center">
-                        <label for="mac">Macintosh</label>
-                        <input type="checkbox" name="mac" value="Yes" id="mac">
-                        <label for="win">Windows</label>
-                        <input type="checkbox" name="win" value="Yes" id="win">
-                        <label for="unix">Linux</label>
-                        <input type="checkbox" name="unix" value="Yes" id="unix">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="reset">
-                        <input type="submit">
-                    </td>
-                </tr>
-            </table>
+      		let timeDisplay = document.getElementById("time");
+      		timeDisplay.textContent = d.toLocaleTimeString("es-ES", {timeZone: "CET"});;
+    		}
+    		timer()
+    		setInterval(timer, 1000)
+	</script>
 
     </body>
 </html>
