@@ -28,21 +28,49 @@
 
         </header>
 
-	<h2 id="time" align="center" style="font-size:200px; margin: 0px"></h2>
+	    <h2 id="time" align="center" style="font-size:200px; margin: 0px"></h2>
 	
         <p>Welcome to the future date and time page. This page will eventually display
         the current data and time in Amalia using the local calendar. This page is currently a WIP.</p>
-        	
-	<script>
-		function timer() {
-      		let d = new Date;
 
-      		let timeDisplay = document.getElementById("time");
-      		timeDisplay.textContent = d.toLocaleTimeString("es-ES", {timeZone: "HST"});;
-    		}
-    		timer()
-    		setInterval(timer, 1000)
-	</script>
+        <h2>Time</h2>
+
+        <h3>Difference from Standard</h3>
+        <p>Amali time is different from the standard world clock where 0000h and 1200h refer to midnight
+        and noon respectively. Amali time is shifted by six hours so that 0000h and 1200h refer to 
+        sunrise and sunset respectively. Therefore noon and midnight take place at 0600h and 1800h.</p>
+
+        <h3>History</h3>
+        <p>When the Amalian was sailing Westward, the sailors came across Swahili time during their stay in 
+        East Africa. Here the Amalian sailors started to base their time on sunrise and sunset.</p>
+        
+        <p>Once more precise time keeping methods from celestial obervations became standard in Amalia, 0600h 
+        became pinned to the sun crossing the southern meridian. This meant that sunrise and sunset would 
+        vary by a few minutes from 0000h and 1200h throughout the year. This system is now called Amali 
+        Traditional Time (ATT).</p>
+
+        <p>After the creation of timezones, Amalians found themseleves on the border between UTC-6 and UTC-5. 
+        Both of these options were not ideal since mean solar noon would be off my about thirty minutes form 
+        both timezones. Following some lengthy debate in government, the lower house voted <!--insert vote %-->
+        to follow UTC-5<!--insert reason-->.</p>
+
+        <p>Despite the adoption of UTC-5 as the official timezone, locals continued to use a variation of ATT 
+        in their day to day lives. Amali Standard Time (AST) runs six hours behind that of UTC-5 so that noon 
+        coincides with the correct hour on the clock as with local tradition. However since the minutes are 
+        synced to UTC-5, mean solar noon still occurs about thirty minutes later to tradtion. Therefore locals
+        can simply convert between AST and UTC-5 by adding or subtracting 6 hours.
+        </p>
+        	
+        <script>
+            function timer() {
+                let d = new Date;
+
+                let timeDisplay = document.getElementById("time");
+                timeDisplay.textContent = d.toLocaleTimeString("es-ES", {timeZone: "NUT"});;
+                }
+                timer()
+                setInterval(timer, 1000)
+        </script>
 
     </body>
 </html>
