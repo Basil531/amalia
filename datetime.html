@@ -4,6 +4,8 @@
         <title>The Amalian - Data/Time</title>
         <link rel="stylesheet" href="css/main.css">
 	    <link rel="stylesheet" href="css/nav.css">
+
+        <script src="js/clock.js"></script>
     </head>
 
         <header>
@@ -63,14 +65,8 @@
         </p>
         	
         <script>
-            function timer() {
-                let d = new Date;
-
-                let timeDisplay = document.getElementById("time");
-                timeDisplay.textContent = d.toLocaleTimeString("es-ES", {timeZone: "Pacific/Niue"});;
-                }
-                timer()
-                setInterval(timer, 1000)
+            amaliTime()
+            setInterval(amaliTime, 1000)
         </script>
 
     </body>
