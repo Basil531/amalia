@@ -17,7 +17,7 @@ function newAmaliTime() {
     let d = new Date;
     
     //func to put time in format XX:XX:XX d/n
-    let f = d.toLocaleTimeString("en-PK", {timeZone: "Europe/Lisbon"}).split(" ");
+    let f = d.toLocaleTimeString("en-PK", {timeZone: "Africa/Algiers"}).split(" ");
     let time = f[0]+s[f[1]];
     let suffix = s[f[1]];
     //console.log(time+s);
