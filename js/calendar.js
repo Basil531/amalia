@@ -8,11 +8,12 @@ function amalianCalendar() {
     };
     //gat date
     let d = new Date;
+    d.setDate(d.getDate()+1)
     const options = {
     year: "numeric",
     month: "numeric",
     day: "numeric",
-    timeZone: "Pacific/Apia"
+    timeZone: "Africa/Algiers"
     };
     //console.log(d.toLocaleDateString('fa-IR-u-nu-latn', options));
     //Put date in correct format
