@@ -34,7 +34,7 @@
         <h2>Time in Amalia now.</h2>
 
 	    <h2 id="time" align="center" style="font-size:250px; margin: 0px"></h2>
-        
+
         <h2 id="suffix"></h2>
 
         <h2 id="cal" align="right"></h2>
@@ -72,6 +72,15 @@
             setInterval(newAmaliTime, 1000)
             amalianCalendar()
             setInterval(amalianCalendar, 1000)
+
+            var current = new Date();
+            var future = new Date();
+            future.setTime(future.getTime() + 3600000); //3600000 = 1 hour
+            future.setMinutes(0);
+            future.setSeconds(0);
+
+            var timeout = (future.getTime() - current.getTime());
+            setTimeout(function() { window.location.reload(true); }, timeout);
         </script>
 
     </body>
