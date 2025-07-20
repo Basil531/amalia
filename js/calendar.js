@@ -20,9 +20,20 @@ function amalianCalendar() {
     let date = f[2];
     let month = monthNames[f[1]];
     let year = f[0];
+
+    let end = "th"
+    if (date == 1) {
+        end = "st"
+    }
+    if (date == 2) {
+        end = "nd"
+    }
+    if (date == 3) {
+        end = "rd"
+    }
     //console.log(date,month,year)
-    //console.log('Today is the '+date+"th of "+month+", "+year)
-    let cal = "Today is the "+date+" of "+month+", "+year
+    //console.log('Today is the '+date+end+"th of "+month+", "+year)
+    let cal = "Today is the "+date+end+" of "+month+", "+year
 
     //send date to html
     let calDisplay = document.getElementById("cal");
