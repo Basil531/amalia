@@ -24,7 +24,7 @@ function newAmaliTime() {
 
     //send time to html
     let timeDisplay = document.getElementById("time");
-    timeDisplay.textContent = time
-    let suffixDisplay = document.getElementById("suffix")
-    suffixDisplay = suffix
+    timeDisplay.textContent = time;
+    let suffixDisplay = document.getElementById("suffix");
+    suffixDisplay = suffix;
 };

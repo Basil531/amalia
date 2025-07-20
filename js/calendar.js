@@ -1,16 +1,30 @@
-let monthDays = {
-    1: 31,
-    2: 31,
-    3: 31,
-    4: 31,
-    5: 31,
-    6: 31,
-    7: 30,
-    8: 30,
-    9: 30,
-    10: 30,
-    11: 30,
-    12: 30
-}
+function amalianCalendar() {
+    //define the names of months
+    let monthNames = {
+    1: 'Month 1',2: 'Month 2',3: 'Month 3',
+    4: 'Month 4',5: 'Month 5',6: 'Month 6',
+    7: 'Month 7',8: 'Month 8',9: 'Month 9',
+    10: 'Month 10',11: 'Month 11',12: 'Month 12'
+    };
+    //gat date
+    let d = new Date;
+    const options = {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    timeZone: "Pacific/Apia"
+    };
+    //console.log(d.toLocaleDateString('fa-IR-u-nu-latn', options));
+    //Put date in correct format
+    let f = d.toLocaleDateString('fa-IR-u-nu-latn', options).split("/")
+    let date = f[2];
+    let month = monthNames[f[1]];
+    let year = f[0];
+    //console.log(date,month,year)
+    //console.log('Today is the '+date+"th of "+month+", "+year)
+    let cal = "Today is the "+date+" of "+month+", "+year
 
-console.log(monthDays)
+    //send date to html
+    let calDisplay = document.getElementById("cal");
+    calDisplay.textContent = cal;
+}
