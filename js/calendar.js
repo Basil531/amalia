@@ -1,10 +1,10 @@
 function amalianCalendar() {
     //define the names of months
     let monthNames = {
-    1: 'Andromeda',2: 'Cassiopeia',3: 'Pleiades',
-    4: 'Sirius',5: 'Ursa',6: 'Regulus',
-    7: 'Arcturus',8: 'Crux',9: 'Antares',
-    10: 'Vega',11: 'Altair',12: 'Deneb'
+    7: 'Andromeda',8: 'Cassiopeia',9: 'Pleiades',
+    10: 'Sirius',11: 'Ursa',12: 'Regulus',
+    1: 'Arcturus',2: 'Crux',3: 'Antares',
+    4: 'Vega',5: 'Altair',6: 'Deneb'
     };
     //gat date
     let d = new Date;
