@@ -37,12 +37,12 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #F52A01;
+    color: #f97281;
 }
 
 button {
     padding: 9px 25px;
-    background-color: #F52A01;
+    background-color: #171f85;
     color: white;
     border: none;
     border-radius: 50px;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-color: #B71F01;
+    background-color: #7b589e;
     color: white;
 }
 
