@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200&family=Reem+Kufi+Fun:wght@400..700&family=Tangerine:wght@700&display=swap');
 
 
-.reem-kufi-fun-<uniquifier> {
+/* CSS font modifier template*/
+/*.reem-kufi-fun-<uniquifier> {
   font-family: "Reem Kufi Fun", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-}
+}*/
 
 header {
     display: flex;
