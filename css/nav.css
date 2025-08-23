@@ -13,7 +13,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0px;
-    background-color: #00293B;
+    /*background-color: #00293B;*/
+    background: transparent;
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     padding-right: 10%;
