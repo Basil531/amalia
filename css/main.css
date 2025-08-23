@@ -1,4 +1,5 @@
-body {background-color: #F1F3CE}
+/*body {background-color: #F1F3CE}*/
+body {background-image: linear-gradient(indigo, orange);}
 
 p {
     font-family:'Times New Roman', Times, serif;
