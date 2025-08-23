@@ -6,7 +6,7 @@ function amalianCalendar() {
     1: 'Arcturus',2: 'Crux',3: 'Antares',
     4: 'Vega',5: 'Altair',6: 'Deneb'
     };
-    //gat date
+    //get date
     let d = new Date;
     d.setDate(d.getDate()+1)
     const options = {
