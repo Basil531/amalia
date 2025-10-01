@@ -88,7 +88,8 @@
             setInterval(newAmaliTime, 1000)
             amalianCalendar()
             setInterval(amalianCalendar, 1000)
-
+            
+            // Refresh date every hour on the hour
             var current = new Date();
             var future = new Date();
             future.setTime(future.getTime() + 3600000); //3600000 = 1 hour
