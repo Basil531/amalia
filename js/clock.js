@@ -19,7 +19,7 @@ function newAmaliTime() {
     //func to put time in format XX:XX:XX d/n
     let f = d.toLocaleTimeString("en-PK", {timeZone: "Africa/Algiers"}).split(" ");
     let hms = f[0].split(":");
-    if (hms[0]=12) {hms[0]=0};
+    if (hms[0]==12) {hms[0]=0};
     let time = hms[0]+":"+hms[1]+":"+hms[2]+s[f[1]];
     //let suffix = s[f[1]];
     //console.log(time+s);
