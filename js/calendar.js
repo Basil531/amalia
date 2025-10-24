@@ -1,10 +1,10 @@
 function amalianCalendar() {
     //define the names of months
     let monthNames = {
-    7: 'Andromeda',8: 'Cassiopeia',9: 'Pleiades',
-    10: 'Sirius',11: 'Ursa',12: 'Regulus',
-    1: 'Arcturus',2: 'Crux',3: 'Antares',
-    4: 'Vega',5: 'Altair',6: 'Deneb'
+    1: 'Splica',2: 'Arcturus',3: 'Antares',
+    4: 'Vega/Altair',5: 'Deneb',6: 'Fomalhaut',
+    7: 'Andromeda',8: 'Pleiades',9: 'Orion',
+    10: 'Sirius',11: 'alFard/Soheil',12: 'Regulus'
     };
     //get date
     let d = new Date;
@@ -20,16 +20,16 @@ function amalianCalendar() {
     let f = d.toLocaleDateString('fa-IR-u-nu-latn', options).split("/")
     let date = f[2];
     let month = monthNames[f[1]];
-    let year = f[0];
+    let year = f[0]-869; //convert to Amali year
 
     let end = "th"
-    if (date == 1) {
+    if (date == 1 || date == 21 || date == 31) {
         end = "st"
     }
-    if (date == 2) {
+    if (date == 2 || date == 22) {
         end = "nd"
     }
-    if (date == 3) {
+    if (date == 3 || date == 23) {
         end = "rd"
     }
     //console.log(date,month,year)
