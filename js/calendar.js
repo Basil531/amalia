@@ -1,7 +1,7 @@
 function amalianCalendar() {
     //define the names of months
     let monthNames = {
-    1: 'Splica',2: 'Arcturus',3: 'Antares',
+    1: 'Spica',2: 'Arcturus',3: 'Antares',
     4: 'Vega/Altair',5: 'Deneb',6: 'Fomalhaut',
     7: 'Andromeda',8: 'Pleiades',9: 'Orion',
     10: 'Sirius',11: 'alFard/Soheil',12: 'Regulus'
