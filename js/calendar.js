@@ -8,7 +8,7 @@ function amalianCalendar() {
     };
     //get date
     let d = new Date;
-    d.setDate(d.getDate()+1)
+    d.setDate(d.getDate())
     const options = {
     year: "numeric",
     month: "numeric",
